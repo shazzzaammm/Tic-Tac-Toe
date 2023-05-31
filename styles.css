@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #3c1518;
+  color: #d58936;
+  font-family: ubuntu;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 5em 5em 5em;
+  grid-template-rows: 5em 5em 5em;
+  column-gap: 0.5em;
+  row-gap: 0.5em;
+  justify-content: center;
+}
+
+.game-button {
+  border: 1px solid #a44200;
+  background-color: transparent;
+  color: #d58936;
+}
+
+button:hover {
+  background-color: #69140e;
+}
+
+.game-button:disabled {
+  background-color: transparent;
+  color: #d58936;
+}
+h1 {
+  text-align: center;
+  border-bottom: 0.05em solid #a44200;
+  margin-bottom: 0.5em;
+  font-size: 4em;
+}
+
+.score-text-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.25em;
+}
+
+.footer {
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.replay-button {
+  padding: 1em;
+  border-color: #a44200;
+}
+.wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
